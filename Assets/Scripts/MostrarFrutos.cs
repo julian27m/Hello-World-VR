@@ -3,6 +3,7 @@ using UnityEngine;
 public class MostrarFrutos : MonoBehaviour
 {
     public GameObject objetoFrutoPrefab; // Objeto que se instanciará
+    public float maximaRotacion; // Ángulo máximo de rotación
 
     private void Start()
     {
@@ -16,11 +17,15 @@ public class MostrarFrutos : MonoBehaviour
         // Instanciar objetos
         foreach (GameObject objetoFruto in objetosFrutos)
         {
-            // Obtener posiciones
+            // Obtener posición
             Vector3 posicion = objetoFruto.transform.position;
 
-            Instantiate(objetoFrutoPrefab, posicion, Quaternion.identity);
-            
+            // Instanciar objeto
+            GameObject frutoInstanciado = Instantiate(objetoFrutoPrefab, posicion, Quaternion.identity);
+
+            // Aplicar rotación aleatoria sobre el eje Y
+            float rotacionAleatoria = Random.Range(-maximaRotacion, maximaRotacion);
+            frutoInstanciado.transform.Rotate(Vector3.up, rotacionAleatoria);
         }
     }
 }
