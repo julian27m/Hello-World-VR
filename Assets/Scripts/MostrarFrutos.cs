@@ -3,7 +3,7 @@ using UnityEngine;
 public class MostrarFrutos : MonoBehaviour
 {
     public GameObject objetoFrutoPrefab; // Objeto que se instanciará
-    public float maximaRotacion; // Ángulo máximo de rotación
+    public float maximaRotacion; // Ángulo de rotación
 
     private void Start()
     {
