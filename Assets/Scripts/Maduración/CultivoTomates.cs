@@ -13,7 +13,7 @@ public class CultivoTomates : MonoBehaviour
         GetComponent<Renderer>().material = materialNoMaduro;
 
         // Al inicio, determinar si el tomate madurará o no de manera aleatoria
-        estaMaduro = Random.value > 0.1f; // Hay un 95% de probabilidad de que madure
+        estaMaduro = Random.value > 0.1f; // Hay un 90% de probabilidad de que madure ///////////////////////////////////////
 
         // Llamar a la función para iniciar el proceso de maduración si está maduro
         if (estaMaduro)

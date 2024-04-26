@@ -8,7 +8,7 @@ public class ContadorTomatesMaduros : MonoBehaviour
 
     void Start()
     {
-        // Esperam 15 segundos antes de comenzar para que todos los tomates terminen su proceso
+        // Esperan 15 segundos antes de comenzar para que todos los tomates terminen su proceso
         Invoke("ContarTomates", 15f);
     }
 
@@ -50,7 +50,7 @@ public class ContadorTomatesMaduros : MonoBehaviour
             }
         }
 
-        // Al finalizar el cilco, solo falta mostrar los resultados en los objetos TextMeshPro
+        // Al finalizar el ciclo, solo falta mostrar los resultados en los objetos TextMeshPro
         textoTomatesMaduros.text = tomatesMaduros.ToString(); ;
         textoTomatesNoMaduros.text = tomatesNoMaduros.ToString(); ;
     }
