@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class ContadorAlimentos : MonoBehaviour
+public class ControladorContadorAlimentos : MonoBehaviour
 {
     public TextMeshPro contadorLechugas;
     public TextMeshPro contadorSandias;
